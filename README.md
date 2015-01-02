@@ -34,15 +34,15 @@ make clean         clean temp compilers files
 ```
 
 ### Description of fields
-  1) Represents 16-bit checksum. Algorithm taken from RFC 1071.
-  2) Sequence number is unique identifier for the specification of the transferred data by client or for the acknowledgement ACK/NACK by server.
-  3) Data length represents length of the transferred data.
-  4) Flags serves for the specification of the packet type.
+1. Represents 16-bit checksum. Algorithm taken from RFC 1071.
+2. Sequence number is unique identifier for the specification of the transferred data by client or for the acknowledgement ACK/NACK by server.
+3. Data length represents length of the transferred data.
+4. Flags serves for the specification of the packet type.
      There are these flags:
      - ACK  (0x01) - Positive acknowledgement of data with given sequence number.
      - NACK (0x02) - Negative acknowledgement of data with given sequence number.
      - END  (0x04) - There are no other data. Transfer completed.
-  5) Data are of an unspecified type so we can send also any binary data.       
+5. Data are of an unspecified type so we can send also any binary data.       
 
 ## Contact and credits
                              
