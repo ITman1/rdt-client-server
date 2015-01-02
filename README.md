@@ -13,10 +13,9 @@ Run as:
 # Building
 ```
 make               compile project - release version
-make pack          packs all required files to compile this project    
-make clean         clean temp compilers files    
-make debug         builds in debug mode    
-make release       builds in release mode 
+make client        compiles only client
+make server        compiles only server
+make clean         clean temp compilers files
 ```
 
 # Protocol
